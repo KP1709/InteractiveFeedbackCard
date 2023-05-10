@@ -6,6 +6,7 @@
     --backgroundColour: hsl(26, 64%, 2%);
     --background--feedback-card: hsl(60, 3%, 14%);
     --buttons--feedback-card: hsl(60, 2%, 21%);
+    --secondaryText--feedback-card: hsl(60, 3%, 43%);
 }
 
 html{
@@ -14,6 +15,7 @@ html{
 
 body{
     background-color: var(--backgroundColour);
+    font-family:'Courier New', Courier, monospace; /*New font family added*/
 }
 
 .viewport{
@@ -39,3 +41,19 @@ body{
     background-color: var(--buttons--feedback-card);
     font-size: 1.5rem;
 }
+
+#heading{
+    margin-top:40px;
+    color: white;
+}
+
+#paragraph{
+    font-size: 1.25rem;
+}
+
+.secondary{
+    color: var(--secondaryText--feedback-card);
+}
+
+
+
