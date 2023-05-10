@@ -5,6 +5,7 @@
 :root{
     --backgroundColour: hsl(26, 64%, 2%);
     --background--feedback-card: hsl(60, 3%, 14%);
+    --buttons--feedback-card: hsl(60, 2%, 21%);
 }
 
 html{
@@ -20,10 +21,25 @@ body{
 }
 
 .feedback-card{
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 30em;
     height: 30em;
     background-color: var(--background--feedback-card);
     border-radius: 3rem;
 }
+
+.star-icon__feedback-card{
+    margin-left: 1.25em;
+    margin-top: 1.25em;
+    font-size: 1.5rem;
+}
+
+.fa-star{
+    padding: 20px;
+    border-radius: 50px;
+    background-color: var(--buttons--feedback-card);
+}
+
 
