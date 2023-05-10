@@ -7,6 +7,7 @@
     --background--feedback-card: hsl(60, 3%, 14%);
     --buttons--feedback-card: hsl(60, 2%, 21%);
     --secondaryText--feedback-card: hsl(60, 3%, 43%);
+    --selectedButton--feedback-card: hsl(32, 85%, 47%);
 }
 
 html{
@@ -56,11 +57,14 @@ body{
 
 .centred{
     justify-content:center;
+    /* border: 2px solid lightblue; */
 }
 
 .feedback-scoring{
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 0.3rem;
 }
 
 .feedback-scr-btn{
@@ -72,5 +76,19 @@ body{
     font-size: 1rem;
 }
 
+.submit-btn-cont{
+    text-align:center;
+    margin-top: 2em;
+}
 
-
+.submit-btn{
+    background-color:var(--selectedButton--feedback-card);
+    border: transparent;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 1em 10em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.15rem;
+}
