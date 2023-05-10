@@ -1,0 +1,29 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --backgroundColour: hsl(26, 64%, 2%);
+    --background--feedback-card: hsl(60, 3%, 14%);
+}
+
+html{
+    margin: 0; 
+}
+
+body{
+    background-color: var(--backgroundColour);
+}
+
+.viewport{
+    padding: 4em 0;
+}
+
+.feedback-card{
+    margin: 0 auto;
+    width: 30em;
+    height: 30em;
+    background-color: var(--background--feedback-card);
+    border-radius: 3rem;
+}
+
