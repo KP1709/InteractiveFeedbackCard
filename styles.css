@@ -25,14 +25,13 @@ body{
 .feedback-card{
     display: flex;
     flex-direction: column;
-    align-items:center;
+    /* align-items:center; */
     margin: 0 auto;
     width: 30em;
     height: 30em;
     background-color: var(--background--feedback-card);
     border-radius: 3rem;
     padding: 2em 2em;
-    border: 2px solid lightblue
 }
 
 .fa-star{
@@ -53,6 +52,24 @@ body{
 
 .secondary{
     color: var(--secondaryText--feedback-card);
+}
+
+.centred{
+    justify-content:center;
+}
+
+.feedback-scoring{
+    display:flex;
+    justify-content: space-between;
+}
+
+.feedback-scr-btn{
+    padding: 15px 20px;
+    border-radius:50%;
+    border: transparent;
+    background-color:var(--buttons--feedback-card);
+    color: var(--secondaryText--feedback-card);
+    font-size: 1rem;
 }
 
 
