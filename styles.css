@@ -1,5 +1,6 @@
 *, *::before, *::after{
     box-sizing: border-box;
+    /* height:100%; */
 }
 
 :root{
@@ -7,7 +8,8 @@
     --background--feedback-card: hsl(60, 3%, 14%);
     --buttons--feedback-card: hsl(60, 2%, 21%);
     --secondaryText--feedback-card: hsl(60, 3%, 43%);
-    --selectedButton--feedback-card: hsl(32, 85%, 47%);
+    --selectedButton--feedback-card: hsl(32, 85%, 47%); 
+    --hoverButton--feedback-card: hsl(36, 2%, 55%);
 }
 
 html{
@@ -16,11 +18,12 @@ html{
 
 body{
     background-color: var(--backgroundColour);
-    font-family:'Courier New', Courier, monospace; /*New font family added*/
+    font-family:'Courier New', Courier, monospace;
 }
 
 .viewport{
     padding: 4em 0;
+
 }
 
 .feedback-card{
@@ -42,7 +45,7 @@ body{
 }
 
 #heading{
-    margin-top:40px;
+    margin-top:35px;
     color: white;
 }
 
@@ -83,9 +86,25 @@ body{
     border: transparent;
     border-radius: 20px;
     text-transform: uppercase;
-    padding: 1em 10em;
+    padding: 1em 10.5em;
     font-size: 1rem;
     font-weight: bold;
     color: white;
     letter-spacing: 0.15rem;
+}
+
+.feedback-scr-btn:hover{
+    background: var(--selectedButton--feedback-card);
+    color: white;
+}
+
+.active{
+    cursor:pointer;
+    background-color:var(--hoverButton--feedback-card);
+    color:white;
+}
+
+.submit-btn:hover{
+    background: white;
+    color: var(--selectedButton--feedback-card);
 }
