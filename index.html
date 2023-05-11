@@ -6,31 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
     <link rel="stylesheet" href="styles.css">
+    <script defer src="index.js"></script>
     <title>Feedback Card</title>
 </head>
 <body>
     <div class="viewport">
 
-        <section class="feedback-card">
+        <section id="question-state" class="feedback-card">
+
             <div class="left-align">
                 <i class="fa-solid fa-star" style="color: #de7f12"></i>
                 <h1 id="heading">How did we do?</h1>
                 <p id="paragraph" class="secondary">Please let us know how we did with your support request. All feedback is appreciated to help us improving our offering!</p>
             </div>
+            
             <div class="centred">
                 <div class="feedback-scoring">
-                    <button class="feedback-scr-btn secondary">1</button>
-                    <button class="feedback-scr-btn secondary">2</button>
-                    <button class="feedback-scr-btn secondary">3</button>
-                    <button class="feedback-scr-btn secondary">4</button>
-                    <button class="feedback-scr-btn secondary">5</button>
+                    <button type ="button" id="one-btn" class="feedback-scr-btn secondary">1</button>
+                    <button type ="button" id="two-btn" class="feedback-scr-btn secondary">2</button>
+                    <button type ="button" id="three-btn" class="feedback-scr-btn secondary">3</button>
+                    <button type ="button" id="four-btn" class="feedback-scr-btn secondary">4</button>
+                    <button type ="button" id="five-btn" class="feedback-scr-btn secondary">5</button>
                 </div>
                 <div class="submit-btn-cont">
-                    <button class="submit-btn">submit</button>
+                    <button class="submit-btn">submit</button> /*After sumbit is pressed, move to next div*/
                 </div>
             </div>
+            
         </section>
-
     </div>
 </body>
 </html>
