@@ -1,4 +1,5 @@
 const btnElScore = document.querySelectorAll(".feedback-scr-btn");
+const selectedScoreEl = document.querySelector("#selected-score");
 
 let score = ""
 
@@ -7,6 +8,6 @@ btnElScore.forEach(btnEl =>{
     document.querySelector('.active')?.classList.remove('active');
     btnEl.classList.add('active');
     score = btnEl.innerText
-    console.log(score)
+    selectedScoreEl.innerText= `You selected ${score} out of 5`  
   });
 });
