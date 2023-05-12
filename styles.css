@@ -117,3 +117,13 @@ body{
     background: white;
     color: var(--selectedButton--feedback-card);
 }
+
+#selected-score{
+    font-size: 0.9rem;
+    padding: 0.4rem 0.1rem;
+    background-color: var(--buttons--feedback-card); 
+    color: var(--selectedButton--feedback-card);
+    border-radius: 50em;
+    width: 60%;
+    margin-left: 20%;
+}
