@@ -38,18 +38,27 @@ body{
 }
 
 .fa-star{
-    padding: 0.9em;
-    border-radius: 50em;
     background-color: var(--buttons--feedback-card);
-    font-size: 1.5rem;
 }
 
-#heading{
+#question-star{
+    font-size: 1.5rem;
+    padding: 0.9em;
+    border-radius: 50em;
+}
+
+#submitted-star{
+    font-size: 3rem;
+    padding: 0.9em;
+    border-radius: 50em;
+}
+
+.heading{
     margin-top:35px;
     color: white;
 }
 
-#paragraph{
+.paragraph{
     font-size: 1.25rem;
 }
 
@@ -58,7 +67,7 @@ body{
 }
 
 .centred{
-    justify-content:center;
+    text-align:center;
 }
 
 .feedback-scoring{
