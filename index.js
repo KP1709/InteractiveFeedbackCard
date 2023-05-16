@@ -17,7 +17,6 @@ btnElScore.forEach(btnEl => {
   });
 });
 
-// User must enter a score before submitting
 function updateCard() {
   if (score != "") {
     document.querySelector('#submitted-state').style.display = "flex";
@@ -25,4 +24,3 @@ function updateCard() {
     document.querySelector('#question-state').style.display = "none";
   }
 }
-
