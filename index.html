@@ -12,7 +12,7 @@
 <body>
     <div class="viewport">
 
-        <section id="question-state" class="feedback-card">
+        <section id="question-state" class="feedback-card" style="display:flex;">
 
             <div class="left-align">
                 <i id="question-star" class="fa-solid fa-star" style="color: #de7f12"></i>
@@ -27,12 +27,12 @@
                     <button type ="button" id="five-btn" class="feedback-scr-btn secondary">5</button>
                 </div>
                 <div class="submit-btn-cont">
-                    <button class="submit-btn">submit</button> <!--After sumbit is pressed, move to next div-->
+                    <button class="submit-btn">submit</button>
                 </div>
 
         </section>
 
-        <section id="submitted-state" class="feedback-card">
+        <section id="submitted-state" class="feedback-card" style="display:none;">
             <div class="centred">
                 <i id="submitted-star" class="fa-solid fa-star" style="color: #de7f12"></i>
                 <h1 class="heading">Thank you!</h1>
@@ -40,7 +40,7 @@
                 <p class="paragraph secondary">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
             </div>
         </section>
-        
+
     </div>
 </body>
 </html>
