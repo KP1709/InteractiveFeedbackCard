@@ -13,7 +13,7 @@
 }
 
 html{
-    margin: 0; 
+    margin: 0;
 }
 
 body{
@@ -22,8 +22,7 @@ body{
 }
 
 .viewport{
-    padding: 4em 0;
-
+    padding: 6em 0;
 }
 
 .feedback-card{
@@ -102,12 +101,8 @@ body{
     letter-spacing: 0.15rem;
 }
 
-.feedback-scr-btn:hover{
-    background: var(--selectedButton--feedback-card);
-    color: white;
-}
 
-.active{
+.active{ /* Submit-btn */
     cursor:pointer;
     background-color:var(--hoverButton--feedback-card);
     color:white;
@@ -116,6 +111,16 @@ body{
 .submit-btn:hover{
     background: white;
     color: var(--selectedButton--feedback-card);
+}
+
+.submit-btn.disabled{
+    cursor:not-allowed;
+    opacity: 20%;
+}
+
+.feedback-scr-btn:hover{
+    background: var(--selectedButton--feedback-card);
+    color: white;
 }
 
 #selected-score{
@@ -127,3 +132,4 @@ body{
     width: 60%;
     margin-left: 20%;
 }
+
