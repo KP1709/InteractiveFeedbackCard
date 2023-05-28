@@ -9,11 +9,16 @@ document.querySelector(".submit-btn").addEventListener('click', updateCard)
 
 let score = ""
 
+submitBtn.classList.add('disabled');
+submitBtn.disabled = true;
+
 btnElScore.forEach(btnEl => {
   btnEl.addEventListener('click', () => {
     document.querySelector('.active')?.classList.remove('active');
     btnEl.classList.add('active');
     score = btnEl.innerText
+    submitBtn.classList.remove('disabled')
+    submitBtn.disabled = false;
   });
 });
 
@@ -24,3 +29,4 @@ function updateCard() {
     document.querySelector('#question-state').style.display = "none";
   }
 }
+
