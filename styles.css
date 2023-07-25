@@ -1,6 +1,6 @@
 *, *::before, *::after{
     box-sizing: border-box;
-    /* height:100%; */
+    margin: 0;
 }
 
 :root{
@@ -12,17 +12,14 @@
     --hoverButton--feedback-card: hsl(36, 2%, 55%);
 }
 
-html{
-    margin: 0;
-}
-
 body{
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
     background-color: var(--backgroundColour);
     font-family:'Courier New', Courier, monospace;
-}
-
-.viewport{
-    padding: 6em 0;
 }
 
 .feedback-card{
@@ -53,7 +50,7 @@ body{
 }
 
 .heading{
-    margin-top:35px;
+    margin:1em 0;
     color: white;
 }
 
@@ -63,6 +60,7 @@ body{
 
 .secondary{
     color: var(--secondaryText--feedback-card);
+    margin-top: 2em;
 }
 
 .centred{
@@ -73,11 +71,12 @@ body{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0.3rem;
+    margin-top: 2rem;
 }
 
 .feedback-scr-btn{
-    padding: 15px 20px;
+    width: 3em;
+    height: 3em;
     border-radius:50%;
     border: transparent;
     background-color:var(--buttons--feedback-card);
