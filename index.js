@@ -12,6 +12,9 @@ let score = ""
 submitBtn.classList.add('disabled');
 submitBtn.disabled = true;
 
+const hide = el => el.style.setProperty("display", "none");
+const show = el => el.style.setProperty("display", "flex");
+
 btnElScore.forEach(btnEl => {
   btnEl.addEventListener('click', () => {
     document.querySelector('.active')?.classList.remove('active');
@@ -24,9 +27,8 @@ btnElScore.forEach(btnEl => {
 
 function updateCard() {
   if (score != "") {
-    document.querySelector('#submitted-state').style.display = "flex";
+    show(submittedCard)
     selectedScoreEl.innerText = `You selected ${score} out of 5`
-    document.querySelector('#question-state').style.display = "none";
+    hide(questionCard);
   }
 }
-
