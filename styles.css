@@ -141,6 +141,7 @@ body {
 }
 
 #submitted-state{
+    display: none;
     justify-content: space-evenly;
 }
 
