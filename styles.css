@@ -163,3 +163,35 @@ body {
 #submitted-message{
     text-align: center
 }
+
+@media (min-width: 425px) {
+    .feedback-card{
+        max-width: 30em;
+        max-height: 30em;
+    }
+
+    .paragraph{
+        font-size: 1.25rem;
+    }
+
+    .feedback-scoring {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -2em;
+    }
+
+    .feedback-scr-btn{
+        --size: 4em;
+        max-height: var(--size);
+        max-width: var(--size);
+    }
+
+    .submit-btn-cont {
+        margin-top: -1.5em;
+    }
+
+    #submitted-select{
+        width: 70%;
+    }    
+}
