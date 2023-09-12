@@ -1,99 +1,116 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    margin: 0;
 }
 
-:root{
+:root {
     --backgroundColour: hsl(26, 64%, 2%);
     --background--feedback-card: hsl(60, 3%, 14%);
     --buttons--feedback-card: hsl(60, 2%, 21%);
     --secondaryText--feedback-card: hsl(60, 3%, 43%);
-    --selectedButton--feedback-card: hsl(32, 85%, 47%); 
+    --selectedButton--feedback-card: hsl(32, 85%, 47%);
     --hoverButton--feedback-card: hsl(36, 2%, 55%);
 }
 
-body{
-    height: 100vh;
+.flex-centre-xy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    margin: 0;
     width: 100vw;
-    display:flex;
-    align-items:center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-color: var(--backgroundColour);
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.feedback-card{
+.feedback-card {
+    position: relative;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    margin: 0 auto;
-    width: 30em;
-    height: 30em;
+    width: 90vw;
+    height: fit-content;
+    padding: 2em 1.5em 2em 1.5em;
     background-color: var(--background--feedback-card);
-    border-radius: 3rem;
-    padding: 2em 2em;
+    border-radius: 20px;
 }
 
-.fa-star{
+#question-state{
+    gap: 3em;
+}
+
+.fa-star {
     background-color: var(--buttons--feedback-card);
+    border-radius: 50em;
+    padding: 0.9em;
 }
 
-#question-star{
+#question-star {
     font-size: 1.5rem;
-    padding: 0.9em;
-    border-radius: 50em;
 }
 
-#submitted-star{
+#submitted-star {
     font-size: 3rem;
-    padding: 0.9em;
-    border-radius: 50em;
 }
 
-.heading{
-    margin:1em 0;
+.heading {
+    margin-top: 35px;
     color: white;
 }
 
-.paragraph{
-    font-size: 1.25rem;
+.paragraph {
+    font-size: 1.1rem;
 }
 
-.secondary{
+.secondary {
     color: var(--secondaryText--feedback-card);
-    margin-top: 2em;
 }
 
-.centred{
-    text-align:center;
+.centred {
+    text-align: center;
 }
 
-.feedback-scoring{
-    display:flex;
-    flex-direction: row;
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-scoring {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
 }
 
-.feedback-scr-btn{
-    width: 3em;
-    height: 3em;
-    border-radius:50%;
+.feedback-scr-btn {
+    --size:13vw;
+    min-width: var(--size);
+    min-height: var(--size);
+    border-radius: 50%;
     border: transparent;
-    background-color:var(--buttons--feedback-card);
+    background-color: var(--buttons--feedback-card);
     font-size: 1rem;
 }
 
-.submit-btn-cont{
-    text-align:center;
-    margin-top: 2em;
+.submit-btn-cont {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.submit-btn{
-    background-color:var(--selectedButton--feedback-card);
+.submit-btn {
+    width: 100%;
+    background-color: var(--selectedButton--feedback-card);
     border: transparent;
     border-radius: 20px;
     text-transform: uppercase;
-    padding: 1em 10.5em;
+    padding: 1em 1em;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -101,33 +118,48 @@ body{
 }
 
 
-.active{ /* Submit-btn */
-    cursor:pointer;
-    background-color:var(--hoverButton--feedback-card);
-    color:white;
+.active {
+    /* Submit-btn */
+    cursor: pointer;
+    background-color: var(--hoverButton--feedback-card);
+    color: white;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     background: white;
     color: var(--selectedButton--feedback-card);
 }
 
-.submit-btn.disabled{
-    cursor:not-allowed;
+.submit-btn.disabled {
+    cursor: not-allowed;
     opacity: 20%;
 }
 
-.feedback-scr-btn:hover{
+.feedback-scr-btn:hover {
     background: var(--selectedButton--feedback-card);
     color: white;
 }
 
-#selected-score{
+#submitted-state{
+    justify-content: space-evenly;
+}
+
+#submitted-select {
+    margin: 0 auto;
+    background-color: var(--buttons--feedback-card);
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width:15em;
+}
+
+#selected-score {
     font-size: 0.9rem;
-    padding: 0.4rem 0.1rem;
-    background-color: var(--buttons--feedback-card); 
     color: var(--selectedButton--feedback-card);
-    border-radius: 50em;
-    width: 60%;
-    margin-left: 20%;
+}
+
+#submitted-message{
+    text-align: center
 }
