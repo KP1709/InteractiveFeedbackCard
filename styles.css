@@ -24,9 +24,6 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--backgroundColour);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -141,7 +138,7 @@ body {
 }
 
 #submitted-state{
-    display: none;
+    display:none;
     justify-content: space-evenly;
 }
 
@@ -149,9 +146,6 @@ body {
     margin: 0 auto;
     background-color: var(--buttons--feedback-card);
     height: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
     width:15em;
 }
@@ -194,5 +188,7 @@ body {
 
     #submitted-select{
         width: 70%;
-    }    
+    }
+
+    
 }
