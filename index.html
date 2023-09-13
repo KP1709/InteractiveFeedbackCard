@@ -9,36 +9,36 @@
     <script defer src="index.js"></script>
     <title>Feedback Card</title>
 </head>
-<body>
+<body class="flex-centre-xy">
 
-   <section id="question-state" class="feedback-card col">
+        <section id="question-state" class="feedback-card col">
 
-        <div class="left-align">
-            <i id="question-star" class="fa-solid fa-star" style="color: #de7f12"></i>
-            <h1 class="heading">How did we do?</h1>
-            <p class="paragraph secondary">Please let us know how we did with your support request. All feedback is appreciated to help us improving our offering!</p>
-        </div>
-            <div class="feedback-scoring">
-                <button type ="button" id="one-btn" class="feedback-scr-btn secondary">1</button>
-                <button type ="button" id="two-btn" class="feedback-scr-btn secondary">2</button>
-                <button type ="button" id="three-btn" class="feedback-scr-btn secondary">3</button>
-                <button type ="button" id="four-btn" class="feedback-scr-btn secondary">4</button>
-                <button type ="button" id="five-btn" class="feedback-scr-btn secondary">5</button>
+            <div class="left-align">
+                <i id="question-star" class="fa-solid fa-star" style="color: #de7f12"></i>
+                <h1 class="heading">How did we do?</h1>
+                <p class="paragraph secondary">Please let us know how we did with your support request. All feedback is appreciated to help us improving our offering!</p>
             </div>
-            <div class="submit-btn-cont">
-                <button class="submit-btn">submit</button>
-            </div>
+                <div class="feedback-scoring">
+                    <button type ="button" id="one-btn" class="feedback-scr-btn secondary">1</button>
+                    <button type ="button" id="two-btn" class="feedback-scr-btn secondary">2</button>
+                    <button type ="button" id="three-btn" class="feedback-scr-btn secondary">3</button>
+                    <button type ="button" id="four-btn" class="feedback-scr-btn secondary">4</button>
+                    <button type ="button" id="five-btn" class="feedback-scr-btn secondary">5</button>
+                </div>
+                <div class="submit-btn-cont">
+                    <button class="submit-btn">submit</button>
+                </div>
 
         </section>
 
-        <section id="submitted-state" class="feedback-card col">
-            <i id="submitted-star" class="fa-solid fa-star" style="color: #de7f12"></i>
-            <h1 class="heading">Thank you!</h1>
-            <div id="submitted-select">
-                <h2 id="selected-score">You selected - out of 5</h2>
-            </div>
-            <p id="submitted-message" class="paragraph secondary">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-            </section>
+        <section id="submitted-state" class="feedback-card flex-centre-xy col">
+                <i id="submitted-star" class="fa-solid fa-star" style="color: #de7f12"></i>
+                <h1 class="heading">Thank you!</h1>
+                <div id="submitted-select" class="flex-centre-xy">
+                    <h2 id="selected-score">You selected - out of 5</h2>
+                </div>
+                <p id="submitted-message" class="paragraph secondary">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </section>
 
-    </body>
+</body>
 </html>
