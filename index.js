@@ -9,9 +9,6 @@ document.querySelector(".submit-btn").addEventListener('click', updateCard)
 
 let score = ""
 
-submitBtn.classList.add('disabled');
-submitBtn.disabled = true;
-
 const hide = el => el.style.setProperty("display", "none");
 const show = el => el.style.setProperty("display", "flex");
 
@@ -20,8 +17,6 @@ btnElScore.forEach(btnEl => {
     document.querySelector('.active')?.classList.remove('active');
     btnEl.classList.add('active');
     score = btnEl.innerText
-    submitBtn.classList.remove('disabled')
-    submitBtn.disabled = false;
   });
 });
 
