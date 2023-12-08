@@ -13,10 +13,13 @@ const hide = el => el.style.setProperty("display", "none");
 const show = el => el.style.setProperty("display", "flex");
 
 btnElScore.forEach(btnEl => {
+  // If one value (button) is active - remove class and add to new value
+  // Enables one value to be selected only
   btnEl.addEventListener('click', () => {
     document.querySelector('.active')?.classList.remove('active');
     btnEl.classList.add('active');
     score = btnEl.innerText
+    document.getElementById('invalid-message').style.display = "none"
   });
 });
 
@@ -26,4 +29,9 @@ function updateCard() {
     selectedScoreEl.innerText = `You selected ${score} out of 5`
     hide(questionCard);
   }
+  else if (score == ""){
+    document.getElementById('invalid-message').style.display = "block"
+  }
 }
+
+
