@@ -11,6 +11,7 @@
     --secondaryText--feedback-card: hsl(60, 3%, 43%);
     --selectedButton--feedback-card: hsl(32, 85%, 47%);
     --hoverButton--feedback-card: hsl(36, 2%, 55%);
+    --textColour: #fff;
 }
 
 .flex-centre-xy {
@@ -60,7 +61,7 @@ body {
 
 .heading {
     margin-top: 35px;
-    color: white;
+    color: var(--textColour);
 }
 
 .paragraph {
@@ -111,7 +112,7 @@ body {
     padding: 1em 1em;
     font-size: 1rem;
     font-weight: bold;
-    color: white;
+    color: var(--textColour);
     letter-spacing: 0.15rem;
 }
 
@@ -120,7 +121,7 @@ body {
     /* Submit-btn */
     cursor:pointer;
     background-color: var(--hoverButton--feedback-card);
-    color: white;
+    color: var(--textColour);
 }
 
 .submit-btn:hover {
@@ -131,11 +132,11 @@ body {
 
 .feedback-scr-btn:hover {
     background: var(--selectedButton--feedback-card);
-    color: white;
+    color: var(--textColour);
 }
 
 #invalid-message{
-    color: white;
+    color: var(--textColour);
     font-size: 0.75rem;
     display:none;
 }
@@ -191,7 +192,5 @@ body {
 
     #submitted-select{
         width: 70%;
-    }
-
-    
+    }   
 }
