@@ -16,8 +16,8 @@ btnElScore.forEach(btnEl => {
   // If one value (button) is active - remove class and add to new value
   // Enables one value to be selected only
   btnEl.addEventListener('click', () => {
-    document.querySelector('.active')?.classList.remove('active');
-    btnEl.classList.add('active');
+    document.querySelector('.active-rating')?.classList.remove('active-rating');
+    btnEl.classList.add('active-rating');
     score = btnEl.innerText
     document.getElementById('invalid-message').style.display = "none"
   });
@@ -33,5 +33,3 @@ function updateCard() {
     document.getElementById('invalid-message').style.display = "block"
   }
 }
-
-
