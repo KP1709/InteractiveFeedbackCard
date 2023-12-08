@@ -117,8 +117,7 @@ body {
 }
 
 
-.active {
-    /* Submit-btn */
+.active-rating {
     cursor:pointer;
     background-color: var(--hoverButton--feedback-card);
     color: var(--textColour);
