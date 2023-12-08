@@ -94,6 +94,7 @@ body {
     border: transparent;
     background-color: var(--buttons--feedback-card);
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .submit-btn-cont {
@@ -117,7 +118,7 @@ body {
 
 .active {
     /* Submit-btn */
-    cursor: pointer;
+    cursor:pointer;
     background-color: var(--hoverButton--feedback-card);
     color: white;
 }
@@ -125,17 +126,18 @@ body {
 .submit-btn:hover {
     background: white;
     color: var(--selectedButton--feedback-card);
+    cursor: pointer;
 }
-
-/* Not best practice to disable buttons - accessibility reason */
-/* .submit-btn.disabled {
-    cursor: not-allowed;
-    opacity: 20%;
-} */
 
 .feedback-scr-btn:hover {
     background: var(--selectedButton--feedback-card);
     color: white;
+}
+
+#invalid-message{
+    color: white;
+    font-size: 0.75rem;
+    display:none;
 }
 
 #submitted-state{
@@ -163,7 +165,7 @@ body {
 @media (min-width: 425px) {
     .feedback-card{
         max-width: 30em;
-        max-height: 30em;
+        max-height: 30.5em;
     }
 
     .paragraph{
