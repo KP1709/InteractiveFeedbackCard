@@ -127,10 +127,11 @@ body {
     color: var(--selectedButton--feedback-card);
 }
 
-.submit-btn.disabled {
+/* Not best practice to disable buttons - accessibility reason */
+/* .submit-btn.disabled {
     cursor: not-allowed;
     opacity: 20%;
-}
+} */
 
 .feedback-scr-btn:hover {
     background: var(--selectedButton--feedback-card);
