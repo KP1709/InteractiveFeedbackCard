@@ -29,6 +29,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+
 .feedback-card {
     position: relative;
     display: flex;
@@ -85,6 +90,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 .feedback-scr-btn {
