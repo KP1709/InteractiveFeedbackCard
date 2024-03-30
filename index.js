@@ -23,6 +23,13 @@ btnElScore.forEach(btnEl => {
   });
 });
 
+// Toggling aria value - using ternary operator for simplicity
+function toggleAria(id){
+  var output = document.getElementById(id).getAttribute("aria-selected")
+  output == "true" ? output = "false" : output = "true"
+  document.getElementById(id).setAttribute("aria-selected", output)
+}
+
 function updateCard() {
   if (score != "") {
     show(submittedCard)
