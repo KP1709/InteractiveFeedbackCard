@@ -14,6 +14,13 @@ Therefore I changed my code so it would accomodate for mobile design first and t
 Most of the code stayed the same. However, there was an oppotunity to refactor and change the code to make it more efficient.  
 Changes happened across all three files.
 
+## ✏️ Update (March 2024)
+After taking Fredrik Ridderfalk's Web Accessibility course on Scrimba, I attempted to increase the accessibility of the project.   
+This included grouping together similar content by assigning them unordered lists (ul) tags and list item (li) tags.   
+In addition, the message on the first card has added detail so the task can be understood more clearly. As this was a rating task, users needs to know why numbered buttons are featured.  
+Other accessibility features were also applied.
+
+
 ## 📚 Resources used  
 - DivSwapJS- https://codepen.io/timmehnz/pen/MKVVLJ?editors=1010  
 - How to keep an Active CSS Style After Clicked On Button - https://www.youtube.com/watch?v=zh1xus05Kl8  
